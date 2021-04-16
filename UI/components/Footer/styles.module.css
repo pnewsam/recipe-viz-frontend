@@ -1,0 +1,11 @@
+.root {
+  background-color: var(--color__black);
+  display: flex;
+  grid-area: footer;
+  justify-content: center;
+  padding: 40px;
+}
+
+.root span {
+  color: var(--color__white);
+}

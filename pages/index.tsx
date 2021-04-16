@@ -1,20 +1,23 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Recipe from "../components/Recipe";
+import Recipe from "../UI/composites/Recipe";
+import Layout from "../UI/components/Layout";
 
-export default function Home() {
+export const Home = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Recipe Visualizer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <Layout>
         <Recipe></Recipe>
-      </main>
+        <div></div>
+      </Layout>
 
-      <footer className={styles.footer}></footer>
+      <footer></footer>
     </div>
   );
-}
+};
+
+export default Home;
