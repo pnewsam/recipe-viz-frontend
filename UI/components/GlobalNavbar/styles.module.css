@@ -1,0 +1,21 @@
+.root {
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222222;
+  display: flex;
+  grid-area: nav;
+}
+
+.root span {
+  color: var(--color__white);
+}
+
+.left {
+}
+
+.right {
+}
+
+.right > *:not(:last-of-type) {
+  margin-right: 20px;
+}

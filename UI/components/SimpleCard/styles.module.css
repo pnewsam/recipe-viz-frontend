@@ -1,0 +1,20 @@
+.root {
+  border: solid 1px grey;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 320px;
+}
+
+.img {
+  border: solid 1px grey;
+  height: 120px;
+  width: 120px;
+}
+
+.textContent {
+}
+
+.heading {
+  font-family: var(--typo__heading);
+  margin-bottom: 8px;
+}

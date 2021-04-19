@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Recipe Visualizer
 
-## Getting Started
+Recipe visualizer is an app designed to communicate recipe information in an intuitive way.
 
-First, run the development server:
+## Components
 
-```bash
-npm run dev
-# or
-yarn dev
+```
+components
+--/UI
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Styles
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This project uses a combination of global styles and component-specific style modules.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Global Styles
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Global styles are intended to enforce consistency in styles across the project and cut down on the number of style declarations made at the component-level. The styles applied here - especially those defined in `base.css` - should reflect design system guidelines as closely as possible.
 
-## Learn More
+**Good Candidates for Global Styles:**
 
-To learn more about Next.js, take a look at the following resources:
+- Fonts
+- Colors
+- Spacing (Margin/Padding)
+- Borders
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Files
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `base.css`: Base styles applied to the HTML elements.
+- `reset.css`: Style resets.
+- `variables.css`: Global css variables.
 
-## Deploy on Vercel
+### Style Modules
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Whenever adding styles via a style module, first be sure that the style wouldn't more helpfully exist in global styles.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Data Models
+
+The `~/models` directory contains the data models used in the application.
+
+## To Do List
+
+- [ ] Add 12-column classes for use throughout.
+- [ ] Add google fonts.
+- [ ] Fix layout grid styles.

@@ -1,0 +1,8 @@
+:root {
+  --typo__heading: "Chonburi", "Times New Roman", Times, serif;
+  --typo__body: "Karla", Lucida, sans-serif;
+
+  --color__grey: #cac7c0;
+  --color__black: #1c1c1c;
+  --color__white: #fffefb;
+}

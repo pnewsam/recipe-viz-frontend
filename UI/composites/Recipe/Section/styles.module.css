@@ -1,0 +1,17 @@
+.root {
+  margin-bottom: 40px;
+}
+
+.heading {
+  border-bottom: solid 1px var(--color__grey);
+  margin-bottom: 12px;
+}
+
+.content {
+  display: flex;
+  justify-content: start;
+}
+
+.content > *:not(:last-of-type) {
+  margin-right: 20px;
+}

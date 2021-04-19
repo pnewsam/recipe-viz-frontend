@@ -1,0 +1,16 @@
+.root {
+  display: grid;
+  grid-template-areas:
+    ". nav ."
+    ". main ."
+    "footer footer footer";
+  grid-template-columns: 40px 1fr 40px;
+  grid-template-rows: 80px 1fr 200px;
+  width: 100%;
+}
+
+.main {
+  background-color: var(--color__white);
+  grid-area: main;
+  padding: 40px;
+}
