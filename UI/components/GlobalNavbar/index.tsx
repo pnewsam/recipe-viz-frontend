@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import styles from "./styles.module.css";
 
 export const GlobalNavbar = () => {
@@ -6,8 +7,12 @@ export const GlobalNavbar = () => {
     <nav className={styles.root}>
       <div className={styles.left}></div>
       <div className={styles.right}>
-        <span>Home</span>
-        <span>My Recipes</span>
+        <Link href="/">
+          <a>Home</a>
+        </Link>
+        <Link href="/my-recipes">
+          <a>My Recipes</a>
+        </Link>
       </div>
     </nav>
   );
