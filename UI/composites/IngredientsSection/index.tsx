@@ -1,6 +1,6 @@
 import React from "react";
-import { Recipe } from "../../../models";
-import ListCard from "../../components/ListCard";
+import { Recipe } from "models";
+import ListCard from "components/ListCard";
 import Section from "../Recipe/Section";
 
 type Props = {
