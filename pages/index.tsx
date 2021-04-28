@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Recipe from "../UI/composites/Recipe";
-import Layout from "../UI/components/Layout";
+import Layout from "components/Layout";
 
 export const Home = () => {
   return (

@@ -1,15 +1,14 @@
 import "../styles/base.css";
 import "../styles/reset.css";
 import "../styles/variables.css";
-import { QueryClient, QueryClientProvider } from "react-query";
-
-const queryClient = new QueryClient();
+import { ApolloProvider } from "@apollo/client/react";
+import { client } from "../client";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <QueryClientProvider client={queryClient}>
+    <ApolloProvider client={client}>
       <Component {...pageProps} />
-    </QueryClientProvider>
+    </ApolloProvider>
   );
 }
 
